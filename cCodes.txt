@@ -1,0 +1,6 @@
+165,Customer Education
+1559,Forgotten Wifi Password
+347,Hardware/Software Failure or Configuration
+1083,Customer Ticket Follow up
+825,Truck Roll
+123,Configuration Error

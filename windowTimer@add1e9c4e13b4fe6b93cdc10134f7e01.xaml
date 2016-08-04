@@ -1,0 +1,50 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AHT_Buddy"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="AHT_Buddy.windowTimer"
+        mc:Ignorable="d"
+        Title="My Timer" Height="300" Width="328.75" Icon="clock_icon__small__flat_iconset__paomedia_5_HuJ_icon.ico">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="countdownTimer" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="00:00:00" Width="310" Foreground="White" FontSize="72" FontFamily="LCDMono2"/>
+        <Rectangle x:Name="rSeconds" HorizontalAlignment="Left" Margin="225,10,0,0" Stroke="White" Width="86" Fill="Black" Opacity="0"/>
+        <Rectangle x:Name="rMinutes" HorizontalAlignment="Left" Margin="115,10,0,0" Stroke="White" Width="85" Fill="Black" Opacity="0" MouseWheel="rMinutes_MouseWheel" MouseLeftButtonDown="rMinutes_MouseLeftButtonDown"/>
+        <Rectangle x:Name="rHours" HorizontalAlignment="Left" Margin="10,10,0,0" Stroke="White" Width="75" Fill="Black" Opacity="0" MouseLeftButtonDown="rHours_MouseLeftButtonDown"/>
+        <ComboBox x:Name="comboBoxHour" HorizontalAlignment="Left" Margin="25,10,0,10" Style="{DynamicResource SimpleComboBox}" Width="45" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+        <ComboBox x:Name="comboBoxMinute" Margin="0,10,136,0" Style="{DynamicResource SimpleComboBox}" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" HorizontalAlignment="Right" Width="45" Height="30" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxSecond" HorizontalAlignment="Right" Margin="0,10,31,10" Style="{DynamicResource SimpleComboBox}" Width="45" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+        <Popup x:Name="popHour" Grid.RowSpan="3">
+            <Grid Height="25" Width="65">
+                <Border x:Name="rCx" Height="24" Margin="0,0,5,0" VerticalAlignment="Top">
+                    <Grid RenderTransformOrigin="0.425,0.605" Margin="0,0,0,-0.5">
+                        <Rectangle x:Name="r_Cx" Stroke="#FF494949" RadiusX="5" RadiusY="5" Margin="0,0,0.416,0.5">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <LinearGradientBrush.RelativeTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                            <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                            <RotateTransform Angle="90" CenterY="0.5" CenterX="0.5"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </LinearGradientBrush.RelativeTransform>
+                                    <GradientStop Color="#FF161616" Offset="0.638"/>
+                                    <GradientStop Color="#FF6A6A6A" Offset="0.018"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <TextBox x:Name="tbDigits" TextWrapping="Wrap" Background="{x:Null}" Foreground="#FFC1C1C1" BorderThickness="0" Margin="0,0,10,0.5" FontStyle="Italic" FontSize="16" VerticalAlignment="Center" SpellCheck.IsEnabled="True" CaretBrush="White" ToolTip="Customer Name - Double Click to Copy" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Popup>
+
+    </Grid>
+</Window>

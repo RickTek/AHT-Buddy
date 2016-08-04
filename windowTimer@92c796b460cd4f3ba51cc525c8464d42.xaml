@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AHT_Buddy"
+        xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="AHT_Buddy.windowTimer"
+        mc:Ignorable="d"
+        Title="My Timer" Height="300" Width="328.75" Icon="clock_icon__small__flat_iconset__paomedia_5_HuJ_icon.ico">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="139*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="countdownTimer" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="00:00:00" Width="310" Foreground="White" FontSize="72" FontFamily="LCDMono2"/>
+        <Rectangle x:Name="rSeconds" HorizontalAlignment="Left" Margin="225,10,0,0" Stroke="White" Width="86" Fill="Black" Opacity="0"/>
+        <Rectangle x:Name="rMinutes" HorizontalAlignment="Left" Margin="115,10,0,0" Stroke="White" Width="85" Fill="Black" Opacity="0" MouseWheel="rMinutes_MouseWheel" MouseLeftButtonDown="rMinutes_MouseLeftButtonDown"/>
+        <Rectangle x:Name="rHours" HorizontalAlignment="Left" Margin="10,10,0,0" Stroke="White" Width="75" Fill="Black" Opacity="0" MouseLeftButtonDown="rHours_MouseLeftButtonDown"/>
+        <ComboBox x:Name="comboBoxHour" HorizontalAlignment="Left" Margin="25,10,0,10" Style="{DynamicResource SimpleComboBox}" Width="45" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+        <ComboBox x:Name="comboBoxMinute" Margin="0,10,136,0" Style="{DynamicResource SimpleComboBox}" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" HorizontalAlignment="Right" Width="45" Height="30" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBoxSecond" HorizontalAlignment="Right" Margin="0,10,31,10" Style="{DynamicResource SimpleComboBox}" Width="45" Foreground="White" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+        <Popup x:Name="popHour" Grid.RowSpan="3">
+            <Grid Height="25" Width="80">
+                <TextBox x:Name="tbDigits" Margin="0,0,5,0" Style="{DynamicResource SimpleTextBox}" TextWrapping="Wrap" Text="TextBox" Height="25" VerticalAlignment="Top" LostFocus="tbDigits_LostFocus" KeyUp="tbDigits_KeyUp"/>
+            </Grid>
+        </Popup>
+
+    </Grid>
+</Window>

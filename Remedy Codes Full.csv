@@ -1,0 +1,16 @@
+tPC,nPC,t1500x,n1500x,t1126,n1126,t14179,n14179,t15730,n15730,t15731,n15731,t1129,n1129,t14194,n14194,t16176,n16176,t347,n347,tSC,nSC
+WG - No Connectivity - All Devices,15003,Customer Education,165,Forgotten WiFi Password,1559,Confgiuration Error,123,Forgotten WiFi Password,1559,Confgiuration Error,123,Customer Education,1083,Customer Education,165,Hardware/Software Failure or Configuration,347,Reset/Power Cycle Mode/Router,6085,Cx Education Hardware/Software,2804
+WG - No Connectivity - Multiple Devices,15002,Forgotten WiFi Password,1559,Customer Ticket Followup,1083,Customer Ticket Followup,1083,Customer Ticket Followup,1083,Customer Ticket Followup,1083,Forgotten WiFi Password,1559,Hardware/Software Failure or Configuration,347,Customer Ticket Followup,1083,Factory Reset WG,6041,Reconfigured Wireless Security Settings,6045
+WG - No Connectivity - Single Device,15001,Hardware/Software Failure or Configuration,347,Truck Roll,825,Truck Roll,825,,,,,Confgiuration Error,123,Customer Ticket Followup,1083,Truck Roll,825,Reset Browser Settings,9671,Toggled Bridge Mode,6092
+WG - Login/Password Issues,1126,Customer Ticket Followup,1083,,,,,,,,,Customer Ticket Followup,1083,Truck Roll,825,,,Reconfig Mobile Device Settings,6067,Cx Cancelled by Phone,2901
+WG - Bridge Mode Toggle,14179,Truck Roll,825,,,,,,,,,Truck Roll,825,,,,,,,Premise Truck Roll,9797
+WG - Slow WiFi Connectivity,14194,,,,,,,,,,,,,,,,,,,,
+WiFi - No Connectivity - All Devices,15006,,,,,,,,,,,,,,,,,,,,
+WiFi - No Connectivity - Multiple Devices,15005,,,,,,,,,,,,,,,,,,,,
+WiFi - No Connectivity- Single Device,15004,,,,,,,,,,,,,,,,,,,,
+No Connecton/Has Block Sync-WiFily or Hardwired-All Devices,15567,,,,,,,,,,,,,,,,,,,,
+Cx Req - WG - Update SSID Passphrase,15730,,,,,,,,,,,,,,,,,,,,
+Cx Req - WG - Update SSID Name,15731,,,,,,,,,,,,,,,,,,,,
+Cx Req - WG - Wifi Settings/Security,1129,,,,,,,,,,,,,,,,,,,,
+Intermittent HSD Connectivity,14966,,,,,,,,,,,,,,,,,,,,
+Device in WiFi Captive Portal,16176,,,,,,,,,,,,,,,,,,,,

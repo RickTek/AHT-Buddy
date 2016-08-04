@@ -1,0 +1,9 @@
+2804,Cx Education Hardware/Software
+6045,Reconfigured Wireless Security Settings
+6085,Reset Modem/Powercycled Router
+6041,Factory Reset WG
+9871,Reset Cx Browser Settings
+6067,Reconfigure Mobile Settings
+6092,Toggled Bridge Mode
+2901,Cx Cancelled by Phone
+9797,Premise Truck Roll
